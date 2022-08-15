@@ -1,0 +1,271 @@
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+    padding: 15px 0;
+    background-color: #f3f8fa;
+    min-height: 40px;
+ }
+
+.breadcrumbs h2 {
+    font-size: 28px;
+    font-weight: 500;  }
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    font-size: 16px;
+ }
+
+.breadcrumbs ol li + li {
+    padding-left: 10px;
+}
+
+.breadcrumbs ol li + li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #6c757d;
+    content: "/";
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+display: block !important;
+    }
+    .breadcrumbs ol {
+    display: block;
+    }
+    .breadcrumbs ol li {
+display: inline-block;
+    }
+  }
+
+
+.grids {
+  max-width: 136rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+
+.card-one {
+  grid-column: 1/4;
+}
+
+.card-two {
+  grid-column: 1/4;
+}
+
+.card-three {
+  grid-column: 1/4;
+}
+
+.card-four {
+  grid-column: 1/4;
+}
+
+.card-five {
+  grid-column: 1/4;
+}
+
+.card-six {
+  grid-column: 1/4;
+}
+
+.card-seven {
+  grid-column: 1/4;
+}
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 25rem;
+  width: 100%;
+  transition: all ease-in-out 400ms;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: translateY(-1px);
+}
+
+.card__side {
+  transition: all 0.8s ease;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25rem;
+  width: 100%;
+  backface-visibility: hidden;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+
+.card__side--front {
+  background-color: white;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card__side--back {
+  background-color: white;
+  transform: rotateY(180deg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.showGreen {
+  transform: rotateY(-180deg);
+}
+
+.showRed {
+  transform: rotateY(0);
+}
+
+
+
+
+
+.heading {
+  transition: all 0.6s linear;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+#front-1 { background-image:
+    url("/assets/images/clients/c7.png")
+}
+
+#front-2 {
+ background-image: 
+ url("/assets/images/clients/c4.png")
+}
+
+#front-3 {
+  background-image: 
+  url("/assets/images/clients/c3.png")
+}
+
+#front-4 {
+    background-image: 
+    url("/assets/images/clients/c2.png")
+}
+
+#front-5 {
+  background-image: 
+  url("/assets/images/clients/dona.png")
+}
+
+#front-6 {
+  background-image: 
+  url("/assets/images/clients/c6.png")
+}
+
+#front-7 {
+    background-image: 
+    url("/assets/images/clients/c1.png")
+}
+
+/* Back */
+
+#back-1 {
+  background-image: 
+  url("/assets/images/clients/c7.png")
+}
+
+#back-2 {
+  background-image: 
+  url("/assets/images/clients/c4.png")
+}
+
+#back-3 {
+  background-image:
+  url("/assets/images/clients/c3.png")
+}
+
+#back-4 {
+  background-image: 
+  url("/assets/images/clients/c2.png")
+}
+
+#back-5 {
+    background-image: 
+    url("/assets/images/clients/dona.png")
+}
+
+#back-6 {
+  background-image: 
+  url("/assets/images/clients/c6.png")
+}
+
+#back-7 {
+  background-image: 
+  url("/assets/images/clients/c1.png")
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+
+  .grids {
+    max-width: 136rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+  }
+
+  .card-one {
+    grid-column: auto;
+  }
+
+  .card-two {
+    grid-column:auto;
+  }
+
+  .card-three {
+    grid-column: auto;
+  }
+
+  .card-four {
+    grid-column: auto;
+  }
+
+  .card-five {
+    grid-column: auto;
+  }
+
+  .card-six {
+    grid-column: auto;
+  }
+
+  .card-seven {
+    grid-column: auto;
+  }
+}
